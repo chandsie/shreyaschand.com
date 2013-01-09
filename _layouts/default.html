@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+        <title>{{ page.title }} | Shreyas Chand</title>
+        {% include ga.ext %}
+
+     </head>
+
+     <body>
+         <div id="main">
+             <div id="header">
+                 <h1>Shreyas Chand</h1>
+                 <div id="navBar">
+                     <ul>
+                         {% if page.title == "Home" %} <li><a class="current" href="/">Home</a></li> {% else %} <li><a href="/">Home</a></li>
+                         {% endif %}
+                         {% if page.title == "Résumé" %} <li><a class="current" href="/resume">Résumé</a></li> {% else %} <li><a href="/resume">Résumé</a></li>
+                         {% endif %}
+                         {% if page.title == "Software" %} <li><a class="current" href="/software">Software</a></li> {% else %} <li><a href="/software">Software</a></li>
+                         {% endif %}
+                         {% if page.group == "blog" %} <li><a class="current" href="blog.shreyaschand.com">Blog</a></li> {% else %} <li><a href="http://blog.shreyaschand.com">Blog</a></li>
+                         {% endif %}
+                     </ul>
+                 </div>
+             </div>
+             <div id="content">
+                 {{ content }}
+                 <br/>
+                 <hr/>
+                 <br/>
+                 Email me at: <a href="mailto:me@shreyaschand.com">me@shreyaschand.com</a>
+             </div>
+             <div id="footer">
+                 <p>&copy; 2013 Shreyas Chand</p>
+                 
+             </div>
+         </div>
+     </body>
+ </html>

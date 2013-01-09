@@ -1,0 +1,81 @@
+---
+
+---
+@import url(http://fonts.googleapis.com/css?family=Monda);
+body {
+    text-align: center;
+    background: url(/img/low_contrast_linen.png);
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: underline;
+    color: #666;
+    font: 100% Courier;
+    &:hover {
+        color: black;
+    }
+}
+#header {
+    padding: 10px;
+}
+#intro {
+    border: 3px solid;
+    max-width: 630px;
+    text-align: left; 
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+#content {
+    background-color: white;
+    padding: 25px;
+}
+#main {
+    background: url(/img/cardboard_flat.png);
+    width: 65%;
+    margin: 0px auto;
+}
+#footer {
+    #copy {
+        text-align: left;
+        padding-left: 5px;
+    }
+    margin: 10px auto;
+    padding-bottom: 1px;
+}
+#pic {
+	float: left;
+    margin-right: 15px;
+    border: solid black 1px;
+    height: 175px;
+    width: 175px;
+}
+#clear {
+	clear: both;
+}
+#navBar {
+    ul {
+        list-style: none;
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        margin: 10px;
+        a {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            padding: 10px 30px;
+
+            &.current {
+                background-color: #666;
+            }
+
+            &:hover {
+                background-color: #666;
+            }
+        }
+    }
+}
