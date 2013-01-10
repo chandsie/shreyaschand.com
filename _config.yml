@@ -1,6 +1,8 @@
+safe: false
+auto: false
+
 baseurl: /
 url: shreyaschand.com
 pygments: true
 permalink: /blog/:year/:month/:day/:title/
-
-auto: true
+include: .htaccess
