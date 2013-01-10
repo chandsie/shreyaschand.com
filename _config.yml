@@ -5,4 +5,3 @@ baseurl: /
 url: shreyaschand.com
 pygments: true
 permalink: /blog/:year/:month/:day/:title/
-include: .htaccess
