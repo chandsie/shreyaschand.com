@@ -24,7 +24,9 @@ module Jekyll
     def convert(content)
       setup
       begin
+        puts "Processing sassy stylesheets"
         Sass::Engine.new(content, :style => :compressed, :syntax => syntax(content)).render
+        puts "Done processing"
       rescue => e
         puts "Sass Exception (#{e.sass_line}): #{e.message}"
       end
