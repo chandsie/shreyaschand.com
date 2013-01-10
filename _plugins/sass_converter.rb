@@ -1,41 +1,28 @@
 module Jekyll
-  # Compiled Sass into CSS. You must specify an empty YAML front matter
-  # at the beginning of the file.
-  # sass|sccs -> .css
-  class SassConverter < Converter    
-    def setup
-      return if @setup
-      require 'sass'
-      @setup = true
-    rescue LoadError
-      STDERR.puts 'You are missing a library required for sass. Please run:'
-      STDERR.puts '  $ [sudo] gem install sass'
-      raise FatalException.new("Missing dependency: sass")
+  # Sass plugin to convert .scss to .css
+  # 
+  # Note: This is configured to use the new css like syntax available in sass.
+  require 'sass'
+  class SassConverter < Converter
+    safe true
+    priority :low
+ 
+     def matches(ext)
+      ext =~ /scss/i
     end
-
-    def matches(ext)
-      ext =~ /sass|scss/i
-    end
-
+ 
     def output_ext(ext)
-      '.css'
+      ".css"
     end
-
+ 
     def convert(content)
-      setup
       begin
-        puts "Processing sassy stylesheets"
-        Sass::Engine.new(content, :style => :compressed, :syntax => syntax(content)).render
-        puts "Done processing"
-      rescue => e
-        puts "Sass Exception (#{e.sass_line}): #{e.message}"
+        puts "Performing Sass Conversion."
+        engine = Sass::Engine.new(content, :syntax => :scss, :load_paths => ["./css/"])
+        engine.render
+      rescue StandardError => e
+        puts "!!! SASS Error: " + e.message
       end
-    end
-    
-  private
-    
-    def syntax(content)
-      content.include?(';') ? :scss : :sass
     end
   end
 end
