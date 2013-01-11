@@ -2,6 +2,6 @@ safe: false
 auto: false
 
 baseurl: /
-url: shreyaschand.com
+url: http://shreyaschand.com
 pygments: true
 permalink: /blog/:year/:month/:day/:title/

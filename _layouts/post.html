@@ -1,6 +1,14 @@
 ---
 layout: default
+group: blog
 ---
 <div class="blog">
-{{ content }}
+    <a href="/blog">&larr;Index</a>
+    <h2>{{ page.title }}</h2>
+    Published on: {{ page.date | date_to_long_string }}
+    {{ content }}
+    <hr/>
+    {% if page %}<a class="left" href="{{ page.previous.url }}">&larr; Previous Post</a>{% endif %}
+    {% if page %}<a class="right" href="{{ page.next.url }}">Next Post &rarr;</a>{% endif %}
+    <div class="clear"></div>
 </div>

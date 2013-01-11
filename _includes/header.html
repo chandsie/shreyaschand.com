@@ -1,0 +1,11 @@
+<header>
+<h1>Shreyas Chand</h1>
+<div id="navBar">
+    <ul>
+        <li><a {% if page.title == "Home" %}class="current"{% endif %} href="/">Home</a></li>
+        <li><a {% if page.title == "Résumé" %}class="current"{% endif %} href="/resume.html">Résumé</a></li>
+        <li><a {% if page.title == "Software" %}class="current"{% endif %} href="/software.html">Software</a></li>
+        <li><a {% if page.group == "blog" %}class="current"{% endif %} href="{{ site.base_url }}/blog">Blog</a></li>
+    </ul>
+</div>
+</header>

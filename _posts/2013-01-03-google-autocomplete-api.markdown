@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Google Autocomplete "API"
-published: false
 ---
 Recently, I've been working on a personal side project that makes use of the [YouTube API](https://developers.google.com/youtube/). As part of the project, I needed to implement a search bar, complete with autocomplete suggestions. Basically, I wanted to mimic the functionality of the YouTube search bar.
 
