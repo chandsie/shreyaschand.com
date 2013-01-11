@@ -78,3 +78,27 @@ a {
         }
     }
 }
+code {
+    background-color: #EEE;
+    padding: 2px 5px;
+}
+.blog {
+    text-align: left;
+}
+.blog pre {
+    border: 1px solid #ccc;
+    font-size: 12.3px;
+    line-height: 16px;
+    margin: 6px 0px;
+    padding: 2px 7px;
+    overflow: auto;
+    width: 98%;
+    background-color: #EEE;
+    padding: 0px;
+}
+.blog img {
+    max-width: 97%;
+    height: auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
