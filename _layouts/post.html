@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: base
 group: blog
 ---
-<div class="blog">
+<div class="post">
     <a href="/blog">↩Index</a>
+    <p>{{ page.date | date_to_long_string }}</p>
     <h2>{{ page.title }}</h2>
-    Published on: {{ page.date | date_to_long_string }}
     {{ content }}
     <hr/>
     {% if page.previous %}<a class="left" href="{{ page.previous.url }}">&larr; Previous Post</a>{% endif %}

@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/syntax.css"/>
-        <title>{{ page.title }} | Shreyas Chand</title>
-    </head>
-    <body>
-        <div id="main">
-            {% include header.html %}
-            <div id="content">
-                {{ content }}
-            </div>
-            {% include footer.html %}
-            {% include ga.html %}
-        </div>
-    </body>
-</html>
+---
+layout: base
+---
+<div id="page" class="center">
+    {{ content }}
+</div>
