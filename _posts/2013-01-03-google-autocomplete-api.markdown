@@ -52,9 +52,14 @@ For <a href="http://stackoverflow.com/questions/2067472/please-explain-jsonp">JS
 </table>
 
 Here are some examples with their outputs:
+
 `http://suggestqueries.google.com/complete/search?q=ob&client=toolbar`
+
 [![Autocomplete Sample ob-xml](/img/blog/google-autocomplete-api/autocomplete-sample-ob-xml-150x150.png)](/img/blog/google-autocomplete-api/autocomplete-sample-ob-xml.png)
+
+
 `http://suggestqueries.google.com/complete/search?q=ob&client=firefox&hl=fr`
+
 [![Autocomplete ob-json-fr](/img/blog/google-autocomplete-api/autocomplete-ob-json-fr-150x150.png)](/img/blog/google-autocomplete-api/autocomplete-ob-json-fr.png)
 
 Keep in mind that this "API" is a bit of a hack; it was only meant for use by Google's own products. Thus, making a JSON or XML request to this service from your javscript code will result in the following error:

@@ -8,7 +8,7 @@ group: blog
     Published on: {{ page.date | date_to_long_string }}
     {{ content }}
     <hr/>
-    {% if page %}<a class="left" href="{{ page.previous.url }}">&larr; Previous Post</a>{% endif %}
-    {% if page %}<a class="right" href="{{ page.next.url }}">Next Post &rarr;</a>{% endif %}
+    {% if page.previous %}<a class="left" href="{{ page.previous.url }}">&larr; Previous Post</a>{% endif %}
+    {% if page.next %}<a class="right" href="{{ page.next.url }}">Next Post &rarr;</a>{% endif %}
     <div class="clear"></div>
 </div>
