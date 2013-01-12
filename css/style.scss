@@ -4,9 +4,11 @@
 /* Utility */
 .left {
     float: left;
+    margin-right: 15px;
 }
 .right {
     float: right;
+    margin-left: 15px;
 }
 .clear {
     clear: both;
@@ -17,6 +19,9 @@
 .blockCenter {
     margin-right: auto;
     margin-left: auto;
+}
+.box {
+    border: solid black 1px;
 }
 /* End Utility */
 body {
@@ -105,8 +110,5 @@ code {
     padding: 10px;
     margin-bottom: 25px;
 }
-#me {
-    margin-right: 15px;
-    border: solid black 1px;
-}
 /* End Home Page */
+

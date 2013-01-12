@@ -1,12 +1,9 @@
 ---
-layout: default
+layout: base
 group: blog
 ---
 {% for post in site.posts %}
-<div id="post">
-    <hr/>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <h4>posted on {{ post.date | date_to_string }}</h4>
-    <hr/>
+<div class="post">
+    {{ post.date | date_to_string }}<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 </div>
 {% endfor %}
