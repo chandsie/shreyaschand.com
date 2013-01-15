@@ -5,3 +5,4 @@ baseurl: /
 url: http://shreyaschand.com
 pygments: true
 permalink: /blog/:year/:month/:day/:title/
+exclude: README
