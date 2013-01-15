@@ -10,6 +10,7 @@ However, it turns out that there is no documented method to get that list of aut
 
 
 `http://suggestqueries.google.com/complete/search`
+{: .center }
 
 
 Through some trial and error, I was able to construct a table of the necessary/available GET request parameters.
@@ -56,11 +57,13 @@ Here are some examples with their outputs:
 `http://suggestqueries.google.com/complete/search?q=ob&client=toolbar`
 
 [![Autocomplete Sample ob-xml](/img/blog/google-autocomplete-api/autocomplete-sample-ob-xml-150x150.png)](/img/blog/google-autocomplete-api/autocomplete-sample-ob-xml.png)
+{: .center }
 
 
 `http://suggestqueries.google.com/complete/search?q=ob&client=firefox&hl=fr`
 
 [![Autocomplete ob-json-fr](/img/blog/google-autocomplete-api/autocomplete-ob-json-fr-150x150.png)](/img/blog/google-autocomplete-api/autocomplete-ob-json-fr.png)
+{: .center }
 
 Keep in mind that this "API" is a bit of a hack; it was only meant for use by Google's own products. Thus, making a JSON or XML request to this service from your javscript code will result in the following error:
 
@@ -104,5 +107,6 @@ $(document).ready(function () {
 And finally, here's a screenshot of my finished YouTube search bar.
 
 [![My Autocopmlete Search Bar](/img/blog/google-autocomplete-api/my-autocomplete-search-bar-300x158.png)](/img/blog/google-autocomplete-api/my-autocomplete-search-bar.png)
+{: .center }
 
 Let me know what you think: Know any better ways to do this? Know of any other GET parameters? Find somewhere that I goofed up?
