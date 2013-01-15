@@ -120,11 +120,27 @@ code {
         width: 97%;
     }
 }
-.post img {
+.post img, .post table {
     max-width: 97%;
     height: auto;
     padding: 5px;
     border: 1px solid #ddd;
+}
+table {
+    th, td {
+        padding: 10px;
+    }
+    th {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #DDD;
+        background-color: $secondary-b-4;
+    }
+    td {
+        font-size: 14px;
+        vertical-align: top;
+        border-top: solid 1px #DDD;
+    }
 }
 
 // Pages
