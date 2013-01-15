@@ -41,6 +41,7 @@ $secondary-b-5: #6699CC;
     border: solid black 1px;
 }
 /* End Utility */
+
 body {
     background: url(/img/low_contrast_linen.png);
     font: 16px "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -55,11 +56,11 @@ a {
         color: $secondary-a-1;
     }
 }
+h1, h2, h3 {
+    color: black;
+}
 header {
     padding: 10px;
-    &>h1 {
-        color: black;
-    }
 }
 #wrapper {
     background: url(/img/cardboard_flat.png);
