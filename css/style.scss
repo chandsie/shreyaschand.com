@@ -103,19 +103,22 @@ footer {
     }
 }
 /* Blog */
-code {
+.post code {
     background-color: #EEE;
     padding: 2px 5px;
-    margin: 0 auto;
 }
-.post pre {
-    border: 1px solid #ccc;
-    font-size: 12.3px;
-    line-height: 16px;
-    overflow-x: scroll;
-    width: 98%;
-    background-color: #EEE;
-    padding: 0px;
+.highlight  {
+    code {
+        padding: 0;
+    }
+    pre {
+        background-color: #EEE;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 16px;
+        overflow-x: scroll;
+        width: 97%;
+    }
 }
 .post img {
     max-width: 97%;
