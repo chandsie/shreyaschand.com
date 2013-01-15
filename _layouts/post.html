@@ -2,13 +2,14 @@
 layout: base
 group: blog
 ---
+<a href="/blog">↩Index</a>
 <div class="post">
-    <a href="/blog">↩Index</a>
-    <p>{{ page.date | date_to_long_string }}</p>
     <h2>{{ page.title }}</h2>
+     <p class="date">Posted on {{ page.date | date_to_long_string }}</p>
     {{ content }}
     <hr/>
     {% if page.previous %}<a class="left" href="{{ page.previous.url }}">&larr; Previous Post</a>{% endif %}
     {% if page.next %}<a class="right" href="{{ page.next.url }}">Next Post &rarr;</a>{% endif %}
     <div class="clear"></div>
+    <hr/>
 </div>

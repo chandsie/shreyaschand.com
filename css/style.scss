@@ -131,17 +131,17 @@ code {
     max-width: 80%;
     text-align: left;
     padding: 10px;
-    margin-bottom: 25px;
 }
 // End Home Page
 // Blog Index Page
 .post {
     padding-bottom: 15px;
-    h2 {
+    h3 {
         display: inline;
     }
     .date {
-        font-size: 12px;
+        font-size: 13px;
+        margin-top: -20px;
     }
 }
 // End Blog Index Page
