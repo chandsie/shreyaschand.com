@@ -57,6 +57,9 @@ a {
 }
 header {
     padding: 10px;
+    &>h1 {
+        color: black;
+    }
 }
 #wrapper {
     background: url(/img/cardboard_flat.png);
