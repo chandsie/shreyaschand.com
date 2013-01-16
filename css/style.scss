@@ -66,7 +66,7 @@ header {
 }
 #wrapper {
     background: url(/img/cardboard_flat.png);
-    width: 55%;
+    max-width: 780px;
 }
 #content {
     background-color: white;
@@ -107,11 +107,13 @@ footer {
 }
 /* Blog */
 code {
+    word-wrap: break-word;
     background-color: #EEE;
     padding: 2px 5px;
 }
 .highlight  {
     code {
+        word-wrap: normal;
         padding: 0;
     }
     pre {
