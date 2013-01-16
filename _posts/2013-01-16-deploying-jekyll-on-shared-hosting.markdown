@@ -2,7 +2,6 @@
 layout: post
 title: Deploying Jekyll on Shared Hosting
 ---
-
 Yesterday, I finally finished porting my website and blog to make use of the wonderful static site generator, [Jekyll](http://jekyllrb.com/).
 
 Here's how to install all the prerequisites on your shared hosting space:
