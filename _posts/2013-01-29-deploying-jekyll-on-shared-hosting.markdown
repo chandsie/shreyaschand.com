@@ -2,7 +2,7 @@
 layout: post
 title: Deploying Jekyll on Shared Hosting
 ---
-Last week, I finally finished porting my website and blog to make use of the wonderful static site generator, [Jekyll](http://jekyllrb.com/).
+A couple of weeks ago I finally finished porting my website and blog to make use of the wonderful static site generator, [Jekyll](http://jekyllrb.com/).
 
 In order to get my whole writing/editing/deploying workflow fully automated I installed jekyll, along with its dependencies, and also setup a [git post-receive hook](http://git-scm.com/book/en/Customizing-Git-Git-Hooks) (based on the official [docs](https://github.com/mojombo/jekyll/wiki/Deployment) on github) to automatically build the site.
 
