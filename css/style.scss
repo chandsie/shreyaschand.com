@@ -151,13 +151,29 @@ table {
 
 // Pages
 // Home Page
-#intro {
+.intro {
     border: 3px solid;
     max-width: 80%;
     text-align: left;
     padding: 10px;
+    > img {
+        width: 175px;
+        height: 175px;
+    }
 }
 // End Home Page
+#yta {
+    background: url(/img/software/yta.png);
+    background-position: left center;
+    background-size: 175px;
+    background-repeat: no-repeat;
+}
+#friday {
+    background: url(/img/software/friday.png);
+    background-position: left center;
+    background-size: 175px;
+    background-repeat: no-repeat;
+}
 // Blog Index Page
 .post {
     padding-bottom: 15px;
