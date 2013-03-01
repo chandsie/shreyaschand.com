@@ -156,6 +156,7 @@ table {
     max-width: 80%;
     text-align: left;
     padding: 10px;
+    margin: 10px auto;
     > img {
         width: 175px;
         height: 175px;
@@ -165,14 +166,18 @@ table {
 #yta {
     background: url(/img/software/yta.png);
     background-position: left center;
-    background-size: 175px;
+    background-size: 100px;
     background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
 }
 #friday {
     background: url(/img/software/friday.png);
     background-position: left center;
-    background-size: 175px;
+    background-size: 100px;
     background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
 }
 // Blog Index Page
 .post {
