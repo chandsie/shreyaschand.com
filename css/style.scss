@@ -75,6 +75,14 @@ header {
 }
 footer {
     padding: 1px;
+    margin: 0 25px;
+    a {
+        color: $secondary-b-3;
+        text-decoration: none;
+        &:hover {
+            color: $secondary-a-2;
+        }
+    }
 }
 #navBar {
     ul {
