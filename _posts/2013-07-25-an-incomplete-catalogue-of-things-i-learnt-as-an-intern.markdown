@@ -22,7 +22,7 @@ Further Reading:
 
 It's HARD. 'nuff said. I want to document the process more, but for now here are my lamentations and whining:
 
-But actually: writing custom views is not easy if you want to make any non trivial modifications or create whole new views for Android. You are required to do screen measurements, layouts and drawing on your own. You have to deal with the complete lifecycle of your view, through rotation, pausing, content updates and more. 
+Writing custom views is not easy if you want to make any non trivial modifications or create whole new views for Android. You are required to do screen measurements, layouts and drawing on your own. You have to deal with the complete lifecycle of your view, through rotation, pausing, content updates and more. 
 
 Further Reading:
 
