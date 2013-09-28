@@ -3,7 +3,7 @@ layout: post
 title: An (Incomplete) Catalogue of Things I Learned as an Intern
 ---
 
-This summer I've been working at [CareZone](https://carezone.com/home). I'm working with some really amazing and talented folks, and I have learnt a LOT! This is a list of all the most notable things.
+This summer I've been working at [CareZone](https://carezone.com/home). I'm working with some really amazing and talented folks, and I have learnt a LOT! This is a list of some of the most notable technical things. This is by no means complete, and is not intended be as such. I might at some point right about my experience in general beyond technical learnings.
 
 ###Weak References in Java
 
