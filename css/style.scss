@@ -42,6 +42,9 @@ $secondary-b-5: #6699CC;
 .box {
     border: solid black 1px;
 }
+.monospace {
+    font-family: Courier, monospace;
+}
 /* End Utility */
 
 body {
@@ -196,7 +199,7 @@ table {
     .date {
         font-size: 13px;
         margin-top: -20px;
-        font-family: Courier, monospace
+        color: #666
     }
 }
 // End Blog Index Page
