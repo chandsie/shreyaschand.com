@@ -171,21 +171,20 @@ table {
     }
 }
 // End Home Page
-#yta {
-    background: url(/img/software/yta.png);
-    background-position: left center;
-    background-size: 100px;
+@mixin softwareImage($imgSize) {
+    background-position: center center;
+    background-size: $imgSize;
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
 }
+#yta {
+    background: url(/img/software/yta.png);
+    @include softwareImage(100px);
+}
 #friday {
     background: url(/img/software/friday.png);
-    background-position: left center;
-    background-size: 100px;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+    @include softwareImage(100px);
 }
 // Blog Index Page
 .post {
